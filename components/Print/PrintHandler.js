@@ -5,7 +5,7 @@ import { useReactToPrint } from 'react-to-print';
 import Button from 'react-bootstrap/Button';
 
 
-import { Printme } from './PrintMe';
+import  Printme  from './PrintMe';
 
 const Print = ({data1, data2, total}) => {
   const componentRef = useRef();

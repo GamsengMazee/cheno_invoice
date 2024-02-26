@@ -11,7 +11,7 @@ import Image from "next/image";
 const id = uuidv4().slice(0, 5);
 let currentYear = new Date().getFullYear();
 
-function forms() {
+function Forms() {
   const [purchaseDetails, setPurchaseDetails] = useState({
     invoice_id: "",
     name: "",
@@ -377,4 +377,4 @@ function forms() {
   );
 }
 
-export default forms;
+export default Forms;

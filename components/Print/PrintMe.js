@@ -1,11 +1,12 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { numberToWords } from "amount-to-words";
 import Table from "react-bootstrap/Table";
 import classes from "./printme.module.css";
 
-export const Printme = React.forwardRef((props, ref) => {
+
+// eslint-disable-next-line react/display-name
+  const Printme = React.forwardRef((props, ref) => {
   let date = []
   date.push(props.data1.date.slice(8,10))
   date.push(props.data1.date.slice(5,7))
@@ -112,3 +113,5 @@ export const Printme = React.forwardRef((props, ref) => {
       </div>
   );
 });
+
+export default Printme;
