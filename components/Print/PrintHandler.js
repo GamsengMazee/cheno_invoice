@@ -14,7 +14,7 @@ const Print = ({data1, data2, total}) => {
     documentTitle: `${data1.invoice_id}`
   });
 
-
+ console.log(data1)
   return (
     <div style={{width: '80%'}}>
       <div style={{display :'none'}}>

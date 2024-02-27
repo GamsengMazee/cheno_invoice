@@ -25,6 +25,8 @@ function Forms() {
     tin_no: "",
     gstn_no: "",
     dlr_gstn: "",
+    registration_no: "",
+    vehicle: ""
   });
   const [partsDetails, setPartDetails] = useState([
     {
@@ -277,6 +279,34 @@ function Forms() {
               fullWidth
             />
           </Box>
+        </Stack>
+
+        {/*Fifth Stack */}
+        <Stack 
+           alignItems="center"
+           justifyContent="center"
+           direction={{ xs: "column", sm: "row" }}
+           spacing={{ xs: 1, sm: 2, md: 4 }}
+        >
+        <Box width="250px">
+            <TextField
+              name="registration_no"
+              value={purchaseDetails.registration_no}
+              onChange={onchangeInputHandler}
+              label="Registration No."
+              fullWidth
+            />
+          </Box>
+
+          <Box width="250px">
+          <TextField
+              name="vehicle"
+              value={purchaseDetails.vehicle}
+              onChange={onchangeInputHandler}
+              label="Vehicle"
+              fullWidth
+            />
+          </Box>   
         </Stack>
       </Stack>
       <div

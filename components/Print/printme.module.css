@@ -8,8 +8,27 @@
   align-items: center;
   flex-direction: column;
   margin-top: 40px;
+  font-weight: 800;
 }
 
+.headerText{
+  border: 1px solid rgb(204, 204, 204);
+  padding: 15px;
+}
+
+.watermark{
+  filter: opacity(5%);
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+
+.formsContainer{
+  border: 1px solid rgb(204, 204, 204);
+  margin: 0px 10px 0px 10px;
+}
 .main ul li {
   text-decoration: none;
   list-style: none;
@@ -20,7 +39,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 20px;
+  
 }
+
+.total{
+  border: 1px solid rgb(204, 204, 204);
+  margin: 0px 20px 0px 20px;
+  padding: 20px 80px 80px 80px;
+  
+}
+
 .total .totalNumber {
   display: flex;
   justify-content: space-around;
